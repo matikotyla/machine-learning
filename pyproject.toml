@@ -43,3 +43,6 @@ update = "uv update"
 install = "uv install"
 install-dev = "uv install -d"
 all = "uv run lint && uv run format && uv run check && uv run test"
+
+[tool.setuptools.package-dir]
+"" = "src"
