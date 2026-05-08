@@ -4,10 +4,11 @@ A modern Python environment for Machine Learning, Data Science, and Linear Algeb
 
 ## 🚀 Quick Start
 
-### 1. Prerequisites
+### 🐍 Prerequisites
 Ensure you have **uv** installed:
 ```bash
 curl -LsSf [https://astral.sh/uv/install.sh](https://astral.sh/uv/install.sh) | sh
+```
 
 ## Setup
 
@@ -25,7 +26,7 @@ Install the pre-commit hooks to ensure code formatting (Ruff) and type checking 
 uv run pre-commit install
 ```
 
-## Verify setup
+## 📘 Verify setup
 
 Run the included test to ensure everything works:
 
@@ -49,9 +50,9 @@ machine-learning/
     └── linear_algebra/ # Mathematical utility modules
 ```
 
-## Development workflow
+## 💻 Development workflow
 
-### Running scripts
+### ⚙️ Running scripts
 
 Because we use the src layout, always run scripts as modules using the -m flag to ensure imports resolve correctly.
 
@@ -60,7 +61,7 @@ uv run python -m data_science.analyse
 uv run python -m machine_learning.train
 ```
 
-## 🧪 Running Tests
+### 🧪 Running Tests
 
 Run the test suite using pytest:
 
@@ -68,26 +69,26 @@ Run the test suite using pytest:
 uv run test
 ```
 
-### Linting and Formatting
+### 🔗 Linting and Formatting
 
 ```bash
 uv run poe lint            # Lint and auto-fix
 uv run poe format          # Format code
 ```
 
-### Type checking
+### 🔍 Type checking
 
 ```bash
 uv run poe check
 ```
 
-### Committing
+### 📝 Committing
 
 ```bash
 uv run poe commit
 ```
 
-### Managing dependencies
+### 📦 Managing dependencies
 
 To add a new package (like `scikit-learn`):
 
@@ -107,7 +108,7 @@ To update all dependencies:
 uv update
 ```
 
-### Quality checks
+### ✅ Quality checks
 
 To run all quality checks (linting, formatting, type checking, testing):
 

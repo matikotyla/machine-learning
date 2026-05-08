@@ -8,3 +8,11 @@ wheels/
 
 # Virtual environments
 .venv
+
+# Ignore data and large models
+*.pt
+*.pth
+*.pkl
+
+# Ignore Jupyter checkpoints
+.ipynb_checkpoints/
