@@ -8,6 +8,7 @@ wheels/
 
 # Virtual environments
 .venv
+.python-version
 
 # Ignore data and large models
 *.pt
@@ -16,3 +17,13 @@ wheels/
 
 # Ignore Jupyter checkpoints
 .ipynb_checkpoints/
+
+# --- Tool Caches ---
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+
+# --- Build Artifacts ---
+dist/
+build/
+*.egg-info/
