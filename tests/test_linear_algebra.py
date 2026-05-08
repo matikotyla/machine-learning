@@ -1,4 +1,5 @@
 import pytest
+
 from linear_algebra.operations import add_vectors
 
 
