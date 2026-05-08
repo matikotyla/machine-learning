@@ -1,0 +1,45 @@
+[project]
+name = "machine-learning"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "numpy>=2.4.4",
+]
+
+[dependency-groups]
+dev = [
+    "mypy>=2.0.0",
+    "poethepoet>=0.45.0",
+    "pre-commit>=4.6.0",
+    "pytest>=9.0.3",
+    "ruff>=0.15.12",
+]
+
+[tool.ruff]
+line-length = 88
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.poe.tasks]
+check = "mypy ."
+lint = "ruff check --fix"
+format = "ruff format"
+test = "pytest"
+pre-commit = "pre-commit run --all-files"
+update = "uv update"
+install = "uv install"
+install-dev = "uv install -d"
+all = "uv run lint && uv run format && uv run check && uv run test"
