@@ -26,10 +26,10 @@ jobs:
         run: uv sync
 
       - name: Run Ruff (Linting)
-        run: uv run ruff check
+        run: uv run poe lint
 
       - name: Run Mypy (Type Checking)
-        run: uv run mypy .
+        run: uv run poe check
 
       - name: Run Pytest (Testing)
-        run: uv run pytest
+        run: uv run poe test

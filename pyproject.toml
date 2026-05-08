@@ -36,7 +36,7 @@ pythonpath = ["src"]
 
 [tool.poe.tasks]
 check = "mypy ."
-lint = "ruff check --fix"
+lint = "ruff check"
 format = "ruff format"
 test = "pytest"
 pre-commit = "pre-commit run --all-files"
