@@ -51,3 +51,6 @@ all = "uv run lint && uv run format && uv run check && uv run test"
 [build-system]
 requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
+
+[project.scripts]
+data-science-example = "data_science.example:main"
